@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<heml lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <title>私のWebアプリケーション</title>
+    </head>
+    <body>
+
+        <article>
+            <h1>API Gatewayを呼び出すツール</h1>
+            <p>入力した文章をAWS Lambdaで処理します。Outputに処理した結果が表示されます。</p>
+            <section>
+                <h2>Input</h2>
+                <textarea id="input_textfield" name="input" rows="4" cols="60"></textarea>
+                <br>
+                <input type="submit" value="transport" onclick="send_message();">
+                <script src="my_util.js"></script>
+                <h2>Output</h2>
+                <p id="output_label">（ここに結果が表示されます）</p>
+            </section>
+        </article>
+    </body>
+</heml>
